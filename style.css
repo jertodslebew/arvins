@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0b1a3f; /* navy */
+  color: #111;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 40px;
+  border-radius: 20px;
+  position: fixed;   /* floating */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1100px;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0b1a3f;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #0b1a3f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #555;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 140px 20px 60px; /* ada jarak biar ga ketutup navbar */
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1000px;
+}
+
+.about-left img {
+  width: 200px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.about-right h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: #0b1a3f;
+  letter-spacing: 2px;
+}
+
+.about-right p {
+  font-size: 16px;
+  color: #0b1a3f;
+  max-width: 500px;
+}
+
+/* Services Section */
+.services-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 36px;   /* ukuran diperbesar */
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 20px; /* jarak bawah lebih kecil */
+  letter-spacing: 3px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* jarak antar card diperkecil */
+  flex-wrap: wrap;
+}
+
+
+.service-card {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b1a3f;
+  min-width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
